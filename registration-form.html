@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Html Form</title>
+</head>
+<body>
+
+	<h1>Registration Form</h1>
+
+	<!-- HTML Form -->
+
+	<form action="/submit.php" target="_self" method="POST">
+
+		<!-- input text field -->
+
+		<fieldset>
+			<legend>Basic Information</legend>
+			<label for="firstName">Name</label>
+		<input type="text" name="fname" id="firstName">
+		<br>
+		<!-- Radio -->
+		<label>Gender</label>
+		<input type="radio" name="gender" id="male" value="male">
+		<label for="male">Male</label>
+		<input type="radio" name="gender" id="female" value="female">
+		<label for="female">Female</label>
+		<br>
+		<l3>DOB:<l3>
+		<input type="date">
+
+		<br>
+
+		<!-- Dropdown/Select -->
+
+		<label for="Religion">Religion</label>
+		<select id="Religion" name="Religion">
+			<option value="  Islam    ">Islam</option>
+			<option value="  Hindu    ">Hindu</option>
+			<option value="  Christian">Christian</option>
+			<option value="  Buddhist ">Buddhist</option>
+		</select>
+		<br>
+
+		<label for="father'sName">Father's Name</label>
+		<input type="text" name="fname" id="father'sName"> 
+
+		<br>
+
+		<label for="mother'sName">Mother's Name</label>
+		<input type="text" name="mname" id="mother'sName"> 
+	</fieldset>
+
+		<br>
+
+
+		<fieldset>
+			<legend>Contact Information</legend>
+			<label for="PresentAddress">Present Address</label>
+		<input type="text" name="paddress" id="PresentAddress"> 
+		<br>
+		<label for="ParmanentAddress">Parmanent Address</label>
+		<input type="text" name="paaddress" id="ParmanentAddress"> 
+		<br>
+		<label for="Phone">Phone</label>
+		<input type="tel" name="phone" id="phone"> 
+		<br>
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email"> 
+		<br>
+		<label for="Personalwebsitelink">Personal Website Link</label>
+		<input type="url" name="pwlink" id="pwlink"> 
+	</fieldset>
+
+		<br>
+		<fieldset>
+			<legend>Academic Information</legend>
+		<label for="sscyear">SSC YEAR</label>
+		<input type="number" name="sscyear" id="sscyear"> 
+		<br>
+		<label for="sscinstitution">SSC Institution</label>
+		<input type="text" name="sscinstitution" id="sscinstitution"> 
+		<br>
+
+		<!-- checkbox -->
+		<input type="checkbox" id="SSC" name="SSC" value="SSC">
+		<label for="SSC">SSC</label>
+		<input type="checkbox" id="HSC" name="HSC" value="HSC">
+		<label for="HSC">HSC</label>
+	</fieldset>
+
+		<br>
+
+		<input type="submit" value="Submit">
+			
+	</form>
+
+	
+</body>
+</html>
