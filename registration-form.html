@@ -9,7 +9,7 @@
 
 	<!-- HTML Form -->
 
-	<form action="/submit.php" target="_self" method="POST">
+	<form action="RegistrationFormAction.php" target="_self" method="POST">
 
 		<!-- input text field -->
 
@@ -25,10 +25,11 @@
 		<input type="radio" name="gender" id="female" value="female">
 		<label for="female">Female</label>
 		<br>
-		<l3>DOB:<l3>
+		
+         <!-- Date-Time -->
+		<t1>DOB:<t1>
 		<input type="date">
-
-		<br>
+				<br>
 
 		<!-- Dropdown/Select -->
 
@@ -62,7 +63,7 @@
 		<input type="text" name="paaddress" id="ParmanentAddress"> 
 		<br>
 		<label for="Phone">Phone</label>
-		<input type="tel" name="phone" id="phone"> 
+		<input type="number" name="phone" id="phone"> 
 		<br>
 		<label for="email">Email</label>
 		<input type="email" name="email" id="email"> 
@@ -74,12 +75,20 @@
 		<br>
 		<fieldset>
 			<legend>Academic Information</legend>
-		<label for="sscyear">SSC YEAR</label>
+		<label for="sscyear">SSC Year</label>
 		<input type="number" name="sscyear" id="sscyear"> 
 		<br>
 		<label for="sscinstitution">SSC Institution</label>
 		<input type="text" name="sscinstitution" id="sscinstitution"> 
 		<br>
+		<label for="hscyear">HSC Year</label>
+		<input type="number" name="sscyear" id="sscyear">
+		<br>
+		<label for="hscinstitution">HSC Institution</label>
+		<input type="text" name="sscinstitution" id="hscinstitution">
+		<br>
+
+
 
 		<!-- checkbox -->
 		<input type="checkbox" id="SSC" name="SSC" value="SSC">
